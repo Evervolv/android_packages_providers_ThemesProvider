@@ -66,6 +66,7 @@ public class WallpaperPreviewGenerator {
             item = createWallpaperItems(0, baseDir, null, pkgName, preview, false);
             if (item != null) {
                 items.wallpapers.add(item);
+                items.lockscreen = item;
             }
         } else {
             final Context themeContext = mContext.createPackageContext(themeInfo.packageName, 0);
